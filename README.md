@@ -1,3 +1,82 @@
+# Humble Superhero API
+
+## Overview
+
+Welcome to the **Humble Superhero API**! This simple API allows you to create superheroes, assign them superpowers, and rate their **humility score**. You can also view a list of superheroes sorted by their humility score.
+
+### Features
+
+- **POST /superheroes**: Add a new superhero (name, superpower, humility score required).
+- **GET /superheroes**: Fetch a list of superheroes sorted by humility score (highest to lowest).
+- **Validation**: Humility score must be between 1 and 10.
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js** (v14 or later)
+- **npm** (or **yarn**)
+
+### Instalation
+
+Clone the repo, run `npm i` and `npm run dev`, you can run the unit tests using `npm run test`
+
+The backend should be running on `http://localhost:3000`.
+
+## Get Started
+
+While server is runing you can go to http://localhost:3000/api
+
+I did not create a React UI, but I used Swagger to create a UI and in my opinion meets your expectation.
+
+## If I Had More Time
+
+If I had more time to work on this project, here’s what I would add:
+
+1. **Implement All CRUD Operations**:
+
+   - **Create**: Done ✅
+   - **Read**: Done ✅
+   - **Update**: Allow updating a superhero’s details, such as their superpower or humility score.
+   - **Delete**: Implement a delete endpoint to remove a superhero by name.
+
+2. **Switch to a Real Database**:
+
+   - Instead of using an in-memory array to store superheroes, I would connect the app to a real database, such as **MongoDB** or **PostgreSQL**.
+   - This would help with data persistence across app restarts and provide better scalability.
+
+3. **Personalized Error Handling**:
+
+   - Implement specific error messages for edge cases, such as when the **humility score** is outside the range of 1-10, or when trying to add a superhero with a duplicate name.
+
+4. **Use Name as Unique Identifier**:
+
+   - Ensure that the **name** field is a unique key, meaning superheroes cannot share the same name. This would require additional validation during creation.
+
+5. **Paginated Query**:
+
+   - Implement **pagination** for the `GET /superheroes` endpoint. This would be useful if the list of superheroes grows too large and improves API performance.
+
+6. **Add Unit Tests**:
+
+   - Write tests for each endpoint (using **Jest** and **Supertest**).
+   - Ensure that tests cover all edge cases, such as missing or invalid parameters.
+
+7. **Create a Frontend Interface**:
+
+   - Develop a simple **React** application to allow users to interact with the API.
+   - Users would be able to add superheroes and view the list sorted by humility score.
+
+8. **Deploy the Application**:
+
+   - Deploy the backend API to a cloud service such as **Heroku** or **AWS**.
+   - If the frontend were implemented, deploy it on **Netlify** or **Vercel**.
+
+9. **Security Considerations**:
+   - Implement basic security features such as rate limiting, data validation, and logging for better security.
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
@@ -39,7 +118,7 @@ $ npm install
 $ npm run start
 
 # watch mode
-$ npm run start:dev
+$ npm run dev
 
 # production mode
 $ npm run start:prod
