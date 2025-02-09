@@ -1,0 +1,12 @@
+[
+  { "name": "Captain Humble", "superpower": "Invisibility", "humilityScore": 9 },
+  { "name": "The Kind Phantom", "superpower": "Phasing", "humilityScore": 8 },
+  { "name": "Silent Storm", "superpower": "Weather Control", "humilityScore": 7 },
+  { "name": "The Modest Magician", "superpower": "Illusions", "humilityScore": 10 },
+  { "name": "Benevolent Bolt", "superpower": "Lightning Control", "humilityScore": 6 },
+  { "name": "Humble Guardian", "superpower": "Force Fields", "humilityScore": 9 },
+  { "name": "The Selfless Shadow", "superpower": "Stealth", "humilityScore": 7 },
+  { "name": "The Gentle Giant", "superpower": "Super Strength", "humilityScore": 8 },
+  { "name": "Charitable Comet", "superpower": "Super Speed", "humilityScore": 9 },
+  { "name": "Altruistic Archer", "superpower": "Perfect Aim", "humilityScore": 6 }
+]
